@@ -3,15 +3,9 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 const {Client, RichEmbed} = require('discord.js');
 const Enmap = require('enmap');
+const fs = require("fs");
 
 
-client.on("ready", () => {
-
-    console.log("Bot has Started :)")
-
-    client.user.setActivity("everyone", {type: "WATCHING"});
-
-});
 
 client.config = config;
 
